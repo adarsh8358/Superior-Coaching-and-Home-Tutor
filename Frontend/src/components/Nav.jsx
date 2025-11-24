@@ -20,7 +20,7 @@ const Nav = () => {
       <div className="nav-container">
         {/* Logo */}
         <div className="logo">
-          <NavLink to="/" onClick={closeMenu}>
+          <NavLink to="https://www.superiorcoachingtutor.com" onClick={closeMenu}>
             <img src={logo} alt="Superior Tutor" />
           </NavLink>
         </div>

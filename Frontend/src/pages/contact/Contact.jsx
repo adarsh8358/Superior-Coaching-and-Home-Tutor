@@ -60,22 +60,22 @@ const Contact = () => {
       </section> */}
 
       <section className="contact-info">
-        <div className="info-card" onClick={() => window.location.href = "mailto:support@sssuperiorassociates.com"}>
+        <div className="info-card" onClick={() => window.location.href = "mailto:superiorcoachingtutor@gmail.com"}>
           <Mail size={40} className="icon" />
           <h3>Email</h3>
-          <p className="clickable">superior@gmail.com</p>
+          <p className="clickable"><strong>superiorcoachingtutor@gmail.com</strong></p>
         </div>
 
-        <div className="info-card" onClick={() => window.location.href = "tel:+919876543210"}>
+        <div className="info-card" onClick={() => window.location.href = "tel:+917470472829"}>
           <Phone size={40} className="icon" />
           <h3>Phone</h3>
-          <p className="clickable">+91 98765 43210</p>
+          <p className="clickable"> <strong>+91 7470472829</strong></p>
         </div>
 
         <div className="info-card">
           <MapPin size={40} className="icon" />
           <h3>Address</h3>
-          <p>Bhopal, Madhya Pradesh, India</p>
+          <p> <strong>Bhopal, Madhya Pradesh, India</strong></p>
         </div>
       </section>
 
