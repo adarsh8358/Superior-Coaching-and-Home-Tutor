@@ -1,0 +1,102 @@
+.nav-wrapper {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background: white;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+
+  .nav-container {
+    max-width: 1200px;
+    margin: auto;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+
+    /* ==== Logo ==== */
+    .logo img {
+      height: 100px;
+      width: auto;
+      cursor: pointer;
+    }
+
+    /* ==== Menu Icon (Mobile) ==== */
+    .menu-icon {
+      display: none;
+      font-size: 1.9rem;
+      color: #0078ff;
+      cursor: pointer;
+      transition: 0.3s;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+
+    /* ==== Navigation Links ==== */
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      list-style: none;
+      transition: 0.3s;
+      position: relative;
+
+      li a {
+        text-decoration: none;
+        color: #333;
+        font-size: 1.05rem;
+        font-weight: 500;
+        position: relative;
+
+        &:hover {
+          color: #0078ff;
+        }
+
+        &::after {
+          content: "";
+          position: absolute;
+          bottom: -3px;
+          left: 0;
+          width: 0;
+          height: 2px;
+          background: #0078ff;
+          transition: 0.3s;
+        }
+
+        &:hover::after {
+          width: 100%;
+        }
+      }
+
+      /* ==== Join Now Button (Desktop) ==== */
+      .desktop-btn {
+        .join-btn {
+          padding: 0.7rem 1.4rem;
+          background-color: #0078ff;
+          color: white;
+          border-radius: 8px;
+          font-weight: 600;
+          text-decoration: none;
+          transition: 0.3s;
+          border: 2px solid transparent;
+
+          &:hover {
+            background-color: white;
+            color: #0078ff;
+            border-color: #0078ff;
+          }
+        }
+      }
+
+      /* Hidden on desktop */
+      .close-icon,
+      .social-icons {
+        display: none;
+      }
+    }
+  }
+}

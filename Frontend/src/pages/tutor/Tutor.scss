@@ -1,0 +1,262 @@
+.become-tutor {
+  background: #f9fafc;
+  color: #222;
+  line-height: 1.6;
+
+  .cta-btn {
+    background: linear-gradient(90deg, #0066ff, #0033cc);
+    color: #fff;
+    padding: 0.9rem 1.8rem;
+    border-radius: 10px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.3s;
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+
+  .tutor-hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 6rem 3rem;
+    gap: 2rem;
+
+    .tutor-hero-content {
+      flex: 1 1 500px;
+      h1 {
+        font-size: 2.8rem;
+        span {
+          color: #0066ff;
+        }
+      }
+      p {
+        margin: 1rem 0;
+        color: #555;
+      }
+      ul {
+        margin-bottom: 2rem;
+        li {
+          list-style: none;
+          margin: 0.5rem 0;
+          color: #333;
+        }
+      }
+    }
+
+    .tutor-hero-image {
+      flex: 1 1 400px;
+      img {
+        width: 100%;
+        max-width: 450px;
+        border-radius: 20px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      }
+    }
+  }
+
+  .benefits {
+    text-align: center;
+    padding: 5rem 2rem;
+    background: #fff;
+    h2 {
+        font-size: 2rem;
+      color: #0033cc;
+      margin-bottom: 1rem;
+    }
+    .benefits-desc {
+      color: #555;
+      max-width: 700px;
+      margin: 0 auto 3rem;
+    }
+    .benefit-cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      .card {
+        background: #f0f3ff;
+        border-radius: 15px;
+        padding: 2rem;
+        max-width: 300px;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+        transition: 0.3s;
+        &:hover {
+          transform: translateY(-8px);
+        }
+        h3 {
+          color: #0066ff;
+          margin-bottom: 0.8rem;
+        }
+      }
+    }
+  }
+
+  .how-it-works {
+    padding: 5rem 2rem;
+    text-align: center;
+    background: #f9fbff;
+    h2 {
+        font-size: 2rem;
+      color: #0033cc;
+      margin-bottom: 3rem;
+    }
+    .steps {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      .step {
+        max-width: 300px;
+        background: white;
+        border-radius: 15px;
+        padding: 2rem;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+        img {
+          width: 80px;
+          margin-bottom: 1rem;
+        }
+      }
+    }
+  }
+
+  .tutor-testimonials {
+    background: white;
+    padding: 5rem 2rem;
+    text-align: center;
+    h2 {
+      color: #0033cc;
+      margin-bottom: 3rem;
+    }
+    .testimonials-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      .testimonial {
+        background: #f0f3ff;
+        padding: 2rem;
+        border-radius: 15px;
+        max-width: 320px;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+        transition: 0.3s;
+        &:hover {
+          transform: translateY(-6px);
+        }
+        h4 {
+          margin-top: 1rem;
+          color: #0066ff;
+        }
+        span {
+          font-size: 0.9rem;
+          color: #333;
+        }
+      }
+    }
+  }
+
+  .tutor-stats {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    text-align: center;
+    padding: 4rem 2rem;
+    background: linear-gradient(90deg, #0066ff, #0033cc);
+    color: #fff;
+    flex-wrap: wrap;
+    .stat {
+      h2 {
+        font-size: 2.5rem;
+      }
+    }
+  }
+
+  .apply-form {
+    text-align: center;
+    padding: 5rem 2rem;
+    background: #fff;
+    h2 {
+      margin-bottom: 1rem;
+      font-size: 2.5rem;
+    }
+    form {
+      max-width: 700px;
+      margin: 2rem auto;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      .form-group {
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+        input {
+          flex: 1 1 48%;
+        }
+      }
+      input,
+      textarea {
+        width: 100%;
+        padding: 1rem;
+        border-radius: 10px;
+        border: 1px solid #ccc;
+        outline: none;
+        transition: 0.3s;
+        &:focus {
+          border-color: #0066ff;
+          box-shadow: 0 0 8px rgba(0, 102, 255, 0.3);
+        }
+      }
+      button {
+        border: none;
+        align-self: center;
+      }
+    }
+  }
+
+  @media (max-width: 900px) {
+    .tutor-hero {
+      flex-direction: column-reverse;
+      text-align: center;
+    }
+  }
+}
+
+/* ===== GOOGLE FORM (IFRAME) STYLING ===== */
+.become-tutor {
+  iframe {
+    display: block;
+    width: 90%;
+    max-width: 800px;
+    height: 1100px;
+    margin: 5rem auto;
+    border: none;
+    border-radius: 20px;
+    background: #fff;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    &:hover {
+      // transform: scale(1.02);
+      // box-shadow: 0 15px 50px rgba(0, 0, 0, 0.15);
+    }
+  }
+
+  @media (max-width: 768px) {
+    iframe {
+      width: 95%;
+      height: 950px;
+      border-radius: 15px;
+      margin: 3rem auto;
+    }
+  }
+
+  @media (max-width: 480px) {
+    iframe {
+      height: 900px;
+      border-radius: 12px;
+    }
+  }
+}
+

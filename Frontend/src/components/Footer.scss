@@ -1,0 +1,170 @@
+.footer {
+  // background: #f8fbff;
+  background-color: #0b132b;
+  color: #1a2b4b;
+  padding: 4rem 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1300px;
+    width: 100%;
+    gap: 2.5rem;
+
+    .footer-left,
+    .footer-middle,
+    .footer-right {
+      flex: 1;
+      min-width: 250px;
+    }
+
+    /* Left Section */
+    .footer-left {
+      .footer-logo {
+        width: 140px;
+        border-radius: 10px;
+        margin-bottom: 1rem;
+      }
+
+      .footer-desc {
+        font-size: 0.95rem;
+        color: #4f5d75;
+        line-height: 1.6;
+        margin-bottom: 1.5rem;
+      }
+
+      .tutor-btn {
+        display: inline-block;
+        background: #007bff;
+        color: #fff;
+        font-weight: 600;
+        padding: 0.75rem 1.6rem;
+        border-radius: 30px;
+        transition: all 0.3s ease;
+        text-decoration: none;
+        box-shadow: 0 4px 15px rgba(0, 123, 255, 0.25);
+
+        &:hover {
+          background: #0056d6;
+          transform: translateY(-3px);
+          box-shadow: 0 6px 20px rgba(0, 86, 214, 0.3);
+        }
+      }
+    }
+
+    /* Middle Section */
+    .footer-middle {
+      h3 {
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+        color: #007bff;
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+
+        li {
+          margin-bottom: 0.6rem;
+
+          a {
+            color: #4f5d75;
+            text-decoration: none;
+            font-size: 0.95rem;
+            transition: color 0.3s ease;
+
+            &:hover {
+              color: #007bff;
+            }
+          }
+        }
+      }
+    }
+
+    /* Right Section */
+    .footer-right {
+      h3 {
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+        color: #007bff;
+      }
+
+      p {
+        margin: 0.4rem 0;
+        color: #4f5d75;
+        font-size: 0.95rem;
+      }
+
+      .footer-socials {
+        margin-top: 1rem;
+        display: flex;
+        gap: 0.8rem;
+
+        a {
+          background: #e8f1ff;
+          padding: 0.6rem;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 1rem;
+          color: #007bff;
+          transition: all 0.3s ease;
+
+          &:hover {
+            background: #007bff;
+            color: #fff;
+            transform: translateY(-3px);
+          }
+        }
+      }
+    }
+  }
+
+  /* Footer bottom */
+  .footer-bottom {
+    width: 100%;
+    text-align: center;
+    margin-top: 2rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+    padding-top: 1rem;
+
+    p {
+      font-size: 0.9rem;
+      color: #4f5d75;
+    }
+  }
+}
+
+/* 🌐 Responsive Design */
+@media (max-width: 992px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    .footer-right .footer-socials {
+      justify-content: center;
+    }
+
+    .footer-left .footer-logo {
+      margin: 0 auto 1rem;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .footer {
+    padding: 3rem 1rem 1rem;
+  }
+
+  .footer-left .tutor-btn {
+    padding: 0.65rem 1.3rem;
+    font-size: 0.9rem;
+  }
+}

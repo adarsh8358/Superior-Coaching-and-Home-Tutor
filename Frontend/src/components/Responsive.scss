@@ -1,0 +1,105 @@
+/* ===== NAVBAR MOBILE RESPONSIVE ===== */
+@media (max-width: 900px) {
+  .nav-wrapper .nav-container {
+    .menu-icon {
+      display: block;
+    }
+
+    .nav-links {
+      position: fixed;
+      top: 0;
+      right: 0;
+      height: 100vh;
+      width: 70%;
+      background: white;
+      flex-direction: column;
+      align-items: center;
+      // justify-content: center;
+      padding-top: 170px;
+      gap: 2rem;
+      transform: translateX(100%);
+      transition: transform 0.4s ease;
+      box-shadow: -4px 0 20px rgba(0, 0, 0, 0.1);
+
+      &.open {
+        transform: translateX(0%);
+      }
+
+      li {
+        a {
+          font-size: 1.3rem;
+        }
+
+        &.desktop-btn {
+          display: none;
+        }
+      }
+
+      .close-icon {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 25px;
+        font-size: 2rem;
+        color: #0078ff;
+        cursor: pointer;
+      }
+
+      /* ==== Social Icons (Mobile Only) ==== */
+      .social-icons {
+        display: flex;
+        position: absolute;
+        bottom: 180px;
+        gap: 1.2rem;
+
+        a {
+          // color: #0078ff;
+          text-decoration: none;
+          font-size: 1.8rem;
+          transition: 0.3s;
+          border-radius: 10px;
+          font-size: 2.4rem;
+
+          &:hover {
+            color: #005fd1;
+            transform: scale(1.1);
+          }
+
+          .ri-facebook-circle-fill {
+            border-radius: 10px;
+            font-size: 2.4rem;
+            color: white;
+            background-color: #1877f2;
+          }
+
+          .ri-instagram-fill {
+            border-radius: 10px;
+            font-size: 2.4rem;
+            color: white;
+            background: radial-gradient(circle at 30% 107%,
+                #fdf497 0%,
+                #fd5949 45%,
+                #d6249f 60%,
+                #285aeb 90%);
+            // -webkit-background-clip: text;
+            // -webkit-text-fill-color: transparent;
+          }
+
+          .ri-linkedin-box-fill {
+            border-radius: 10px;
+            font-size: 2.4rem;
+            color: white;
+            background-color: #0a66c2;
+          }
+
+          .ri-twitter-x-fill {
+            border-radius: 10px;
+            font-size: 2.4rem;
+            color: white;
+            background-color: #000000;
+          }
+        }
+      }
+    }
+  }
+}
