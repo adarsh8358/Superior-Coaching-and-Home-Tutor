@@ -16,7 +16,7 @@ const Footer = () => {
             Empowering students and tutors to connect, learn, and grow. Superior Coaching is where 
             quality education meets opportunity — helping learners succeed and tutors inspire.
           </p>
-          <Link to="/become-tutor" className="tutor-btn">Become a Tutor</Link>
+          <Link to="/tutor" className="tutor-btn">Become a Tutor</Link>
         </div>
 
         {/* Middle Section */}

@@ -5,7 +5,7 @@ import "./WhatsAppButton.scss";
 const WhatsAppButton = () => {
   const [open, setOpen] = useState(false);
 
-  const whatsappNumber = "917566974641"; // <-- Replace with your WhatsApp number (with country code, no + sign)
+  const whatsappNumber = "917470472829"; // <-- Replace with your WhatsApp number (with country code, no + sign)
 
   // Predefined messages
   const studentMsg = "Hi, I’m looking for a home tutor. Please help me with the details.";

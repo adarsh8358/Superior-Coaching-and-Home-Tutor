@@ -72,11 +72,28 @@ const Contact = () => {
           <p className="clickable"> <strong>+91 7470472829</strong></p>
         </div>
 
-        <div className="info-card">
+        {/* <div className="info-card">
           <MapPin size={40} className="icon" />
           <h3>Address</h3>
           <p> <strong>Bhopal, Madhya Pradesh, India</strong></p>
+        </div> */}
+
+        <div
+          className="info-card"
+          onClick={() =>
+            window.open(
+              "https://www.google.com/maps/place/Superior+Coaching+and+Home+Tutor/@23.1828719,77.4517369,17z/data=!3m1!4b1!4m6!3m5!1s0x397c43147a5eab77:0xe905410691932ef9!8m2!3d23.182867!4d77.4543118!16s%2Fg%2F11mrcyxhht?entry=ttu",
+              "_blank"
+            )
+          }
+        >
+          <MapPin size={40} className="icon" />
+          <h3>Address</h3>
+          <p className="clickable">
+            <strong>Superior Coaching and Home Tutor, Bhopal</strong>
+          </p>
         </div>
+
       </section>
 
 
@@ -85,7 +102,7 @@ const Contact = () => {
         <h2>Send Us a Message</h2>
         <p>We’ll get back to you as soon as possible.</p>
 
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc4y9VEezdsjaX1sQRtUreswL-vRD_MYztT6VFlXY5YG9_iRw/viewform?embedded=true" width="640" height="1031" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScaZ-fUcCAaKSsqN-cP0jISShWbqLBttE4s0bWSUIhT_GWuDg/viewform?embedded=true" width="640" height="959" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
 
         {/* <form>
           <div className="form-row">

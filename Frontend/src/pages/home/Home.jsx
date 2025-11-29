@@ -146,7 +146,7 @@ const Home = () => {
               shine.
             </p>
             <div className="btn-group">
-              <Link to={"/contact"} className="btn secondary">Become a Tutor</Link >
+              <Link to={"/tutor"} className="btn secondary">Become a Tutor</Link >
               <Link to={"/contact"} className="btn primary">Join as a Student</Link >
             </div>
           </div>
@@ -386,7 +386,7 @@ const Home = () => {
             >
               Book a Demo
             </Link>
-            <Link to={"/contact"}
+            <Link to={"/about"}
               className="btn secondary"
               onClick={() => navigate("/about")}
             >
